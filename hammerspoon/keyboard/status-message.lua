@@ -9,7 +9,7 @@ statusmessage.new = function(messageText)
     local frame = screen.primaryScreen():frame()
 
     local styledTextAttributes = {
-      font = { name = 'SF Mono Light', size = 18 },
+      font = { name = 'Operator Mono Book', size = 17 },
       color = { red = 1, green = 1, blue = 1, alpha = 1 }
     }
 
@@ -17,23 +17,23 @@ statusmessage.new = function(messageText)
 
     local styledTextSize = drawing.getTextDrawingSize(styledText)
     local textRect = {
-      x = frame.w - styledTextSize.w - 40,
-      y = frame.h - styledTextSize.h + 1,
+      x = frame.w - styledTextSize.w - 30,
+      y = frame.h - styledTextSize.h + 17,
       w = styledTextSize.w + 40,
       h = styledTextSize.h + 40,
     }
-    local text = drawing.text(textRect, styledText):setAlpha(0.85)
+    local text = drawing.text(textRect, styledText):setAlpha(0.9)
 
     local background = drawing.rectangle(
       {
-        x = frame.w - styledTextSize.w - 50,
-        y = frame.h - styledTextSize.h - 0,
+        x = frame.w - styledTextSize.w - 40,
+        y = frame.h - styledTextSize.h + 15,
         w = styledTextSize.w + 20,
         h = styledTextSize.h + 6
       }
     )
-    background:setRoundedRectRadii(10, 10)
-    background:setFillColor({ red = 0.2, green = 0.2, blue = 0.2, alpha = 0.7 })
+    background:setRoundedRectRadii(8, 8)
+    background:setFillColor({ red = 0.15, green = 0.15, blue = 0.15, alpha = 0.8 })
     background:setStroke(false)
 
     return background, text
