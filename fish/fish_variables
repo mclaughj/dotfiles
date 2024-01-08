@@ -2,11 +2,6 @@
 # VERSION: 3.0
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_initialized:3400
-SETUVAR _fish_abbr_blog:hugo\x20server\x20\x2dD\x20\x2dp\x201313
-SETUVAR _fish_abbr_gd:git\x20checkout\x20develop\x20\x26\x26\x20git\x20pull
-SETUVAR _fish_abbr_gl:git\x20log\x20\x2d\x2doneline\x20\x2d20
-SETUVAR _fish_abbr_gs:git\x20status
-SETUVAR _fish_abbr_gsu:git\x20submodule\x20update\x20\x2d\x2dinit\x20\x2d\x2drecursive
 SETUVAR fish_color_autosuggestion:BD93F9
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:F8F8F2
